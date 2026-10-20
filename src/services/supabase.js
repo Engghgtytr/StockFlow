@@ -6,7 +6,14 @@ import { createClient } from '@supabase/supabase-js';
 const url = import.meta.env.VITE_SUPABASE_URL;
 const key = import.meta.env.VITE_SUPABASE_ANON_KEY;
 
-export const isSupabaseConfigured = Boolean(url && key);
+// Uma URL inválida (ex.: a chave colada no lugar da URL) derrubaria o app inteiro.
+const isValidUrl = (value) => /^https?:\/\/\S+$/.test(value ?? '');
 
-// Sem .env, o app funciona só no modo demonstração.
+if (url && !isValidUrl(url)) {
+  console.error('VITE_SUPABASE_URL não é uma URL válida. Usando só o modo demonstração.');
+}
+
+export const isSupabaseConfigured = Boolean(isValidUrl(url) && key);
+
+// Sem .env (ou com .env inválido), o app funciona só no modo demonstração.
 export const supabase = isSupabaseConfigured ? createClient(url, key) : null;
