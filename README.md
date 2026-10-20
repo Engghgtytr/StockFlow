@@ -9,7 +9,7 @@ O app tem **dois modos**:
 
 ## Demonstração
 
-> 🔗 **Link público:** _(adicione aqui depois de publicar; veja [`docs/etapa-7-publicacao.md`](docs/etapa-7-publicacao.md))_
+> 🔗 **Acesse:** https://stock-flow-xi-indol.vercel.app (clique em "Explorar a demonstração" para entrar sem cadastro)
 
 | Dashboard | Produtos |
 |---|---|
