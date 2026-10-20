@@ -80,4 +80,4 @@ Pontos de segurança previstos:
 - [x] Etapa 6: auditoria de acessibilidade (axe-core, 7 telas, 0 problemas) e navegação por teclado
 - [x] Etapa 7 (preparação): `vercel.json` com cabeçalhos de segurança, `npm audit` zerado, screenshots e roteiro do vídeo
 - [x] Etapa 7: publicado no GitHub e na Vercel (https://stock-flow-xi-indol.vercel.app); login, demonstração, celular e cabeçalhos testados na versão publicada
-- [ ] Etapa 8: conversas com 3 a 5 comerciantes
+- [ ] Etapa 8: conversar com 3 a 5 comerciantes (roteiro e registro em `etapa-8-validacao.md`)
